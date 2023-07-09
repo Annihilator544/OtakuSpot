@@ -1,9 +1,13 @@
 body{
     background-image: url("images/background.png");
-    background-size: auto;
     background-color: #242424;
+    background-repeat: no-repeat;
     display: flex;
     height: 100vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     margin: 0%;
 }
 .logo
