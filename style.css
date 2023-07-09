@@ -1,0 +1,17 @@
+body{
+    background-image: url("images/background.png");
+    background-size: auto;
+    background-color: #242424;
+    display: flex;
+    height: 100vh;
+    margin: 0%;
+}
+.logo
+{
+   display: flex;
+    justify-content: center;
+    flex:1;
+    align-items: center;
+    margin-top:auto;
+    margin-bottom:auto;
+}
