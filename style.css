@@ -1,7 +1,6 @@
 body{
     background-image: url("images/background.png");
     background-color: #242424;
-    background-repeat: no-repeat;
     display: flex;
     height: 100vh;
     -webkit-background-size: cover;
