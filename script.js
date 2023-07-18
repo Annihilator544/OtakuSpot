@@ -33,7 +33,7 @@ async function logochange(event){
   element.style.left = '16px';
   element.style.zIndex = '1';
   element.style.textAlign = 'left';
-  element.style.margin = '20px';
+  element.style.margin = '16px';
   }, 100);
   });
 }logochange().then(() => setTimeout(() =>{

@@ -27,7 +27,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    gap: 3vw;
+    gap: 4vw;
     position: fixed;
     top: 0;
     left: 0;
@@ -46,11 +46,11 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    gap: 3vw;
+    gap: 4vw;
     position: fixed;
     top: 0;
     right: 0;
-    font-size: 5vw;
+    font-size: 4vw;
     color: #fff;
     transition: 0.4s;
     align-items: right;
@@ -60,6 +60,8 @@ body{
 .navbar a{
     text-decoration: none;
     color: #fff;
+    padding: 16px;
+    height: 100vh;
     &:hover{
         color: red;
     }
