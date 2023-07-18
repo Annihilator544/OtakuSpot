@@ -1,27 +1,116 @@
 body{
     background-image: url("images/background.png");
     background-color: #242424;
-    
+    flex-direction: column;
     display: flex;
-    height: 100vh;
+    
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     margin: 0%;
 }
-.logo
+#logo
 {
    display: flex;
+    flex-direction: column;
     justify-content: center;
-    flex:1;
+    transition: 1s;
     align-items: center;
-    
+    height: 100vh;   
     font-family: "comicBlock";
     font-size: 20vw;
     color: #fff;
+    
+}
+.logonav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 3vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-size: 5vw;
+    color: #fff;
+    transition: 0.4s;
+    align-items: right;
+    padding: 20px;
+    font-family: "comicBlock";
+}
+.Content{
+    height: 100vh;
+    display: flex;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 3vw;
+    position: fixed;
+    top: 0;
+    right: 0;
+    font-size: 5vw;
+    color: #fff;
+    transition: 0.4s;
+    align-items: right;
+    padding: 20px;
+    font-family: "comicBlock";
+}
+.navbar a{
+    text-decoration: none;
+    color: #fff;
+    &:hover{
+        color: red;
+    }
+}
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 3vw;
+    position: fixed;
+    top: 0;
+    right: 0;
+    font-size: 40px;
+    text-align: right;
+    color: #fff;
+    transition: 0.4s;
+    align-items: right;
+    padding: 20px;
+    font-family: "comicBlock";
+    background-color: #242424;
+    flex: 1;
+    width: 100vw;
+    visibility: collapse;
+}
+svg{
+    margin-left: auto;
+    visibility: hidden;
+}
+.sidebar a{
+    text-decoration: none;
+    color: #fff;
+    &:hover{
+        color: red;
+    }
 }
 @font-face {
     font-family: 'comicBlock';
     src: url(Fonts/comic-block/Comic\ Block\ \ DEMO\ by\ Marta\ van\ Eck.ttf);
 }
+@media (max-width: 600px) {
+    *{
+        font-size: 60px;
+    }
+    .navbar {
+      visibility: hidden;
+    }
+    .logonav{
+        visibility: visible;
+        font-size: 60px;
+    }
+    svg{
+        visibility: visible;
+    }
+  }
