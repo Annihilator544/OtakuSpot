@@ -16,14 +16,29 @@ function createLore(Title, Description, Image, Link){
   let loreLink=document.createElement('a');
   loreLink.href=Link;
   loreLink.innerHTML='Read More';
-  loreItem.appendChild(loreLink);
+//   loreItem.appendChild(loreLink);
   lore.appendChild(loreItem);
   lore.appendChild(loreItem);
 }
 
-createLore('The Beginning', 'The Beginning of the OtakuSpot', 'https://i.imgur.com/3Z0Q8ZB.png', 'https://www.otakuspot.cf/lore/the-beginning');
-createLore('The First War', 'The First War of the OtakuSpot', 'https://i.imgur.com/3Z0Q8ZB.png', 'https://www.otakuspot.cf/lore/the-first-war');
-createLore('The Second War', 'The Second War of the OtakuSpot', 'https://i.imgur.com/3Z0Q8ZB.png', 'https://www.otakuspot.cf/lore/the-second-war');
-createLore('The Beginning', 'The Beginning of the OtakuSpot', 'https://i.imgur.com/3Z0Q8ZB.png', 'https://www.otakuspot.cf/lore/the-beginning');
-createLore('The First War', 'The First War of the OtakuSpot', 'https://i.imgur.com/3Z0Q8ZB.png', 'https://www.otakuspot.cf/lore/the-first-war');
-createLore('The Second War', 'The Second War of the OtakuSpot', 'https://i.imgur.com/3Z0Q8ZB.png', 'https://www.otakuspot.cf/lore/the-second-war');
+createLore('The Beginning', 'The Beginning of the OtakuSpot', 'images/philip-oroni-TGElBQvDINo-unsplash.jpg', 'https://www.otakuspot.cf/lore/the-beginning');
+createLore('The First War', 'The First War of the OtakuSpot', 'images/philip-oroni-TGElBQvDINo-unsplash.jpg', 'https://www.otakuspot.cf/lore/the-first-war');
+createLore('The Second War', 'The Second War of the OtakuSpot', 'images/philip-oroni-TGElBQvDINo-unsplash.jpg', 'https://www.otakuspot.cf/lore/the-second-war');
+createLore('The Beginning', 'The Beginning of the OtakuSpot', 'images/philip-oroni-TGElBQvDINo-unsplash.jpg', 'https://www.otakuspot.cf/lore/the-beginning');
+createLore('The First War', 'The First War of the OtakuSpot', 'images/philip-oroni-TGElBQvDINo-unsplash.jpg', 'https://www.otakuspot.cf/lore/the-first-war');
+createLore('The Second War', 'The Second War of the OtakuSpot', 'images/philip-oroni-TGElBQvDINo-unsplash.jpg', 'https://www.otakuspot.cf/lore/the-second-war');
+createLore('The Beginning', 'The Beginning of the OtakuSpot', 'images/philip-oroni-TGElBQvDINo-unsplash.jpg', 'https://www.otakuspot.cf/lore/the-beginning');
+createLore('The First War', 'The First War of the OtakuSpot', 'images/philip-oroni-TGElBQvDINo-unsplash.jpg', 'https://www.otakuspot.cf/lore/the-first-war');
+createLore('The Second War', 'The Second War of the OtakuSpot', 'images/philip-oroni-TGElBQvDINo-unsplash.jpg', 'https://www.otakuspot.cf/lore/the-second-war');
+createLore('The Beginning', 'The Beginning of the OtakuSpot', 'images/philip-oroni-TGElBQvDINo-unsplash.jpg', 'https://www.otakuspot.cf/lore/the-beginning');
+createLore('The First War', 'The First War of the OtakuSpot', 'images/philip-oroni-TGElBQvDINo-unsplash.jpg', 'https://www.otakuspot.cf/lore/the-first-war');
+createLore('The Second War', 'The Second War of the OtakuSpot', 'images/philip-oroni-TGElBQvDINo-unsplash.jpg', 'https://www.otakuspot.cf/lore/the-second-war');
+
+let heroes=document.getElementsByClassName('galleryppl')[0];
+let i=12;
+while(i>0){
+    let hero=document.createElement('img');
+    hero.src='images/image.png';
+    heroes.appendChild(hero);
+    i--;
+    }
