@@ -29,11 +29,11 @@ async function logochange(event){
   element.style.alignItems = 'flex-start';
   element.style.justifyContent = 'start';
   element.style.position = 'sticky';
-  element.style.top = '16px';
-  element.style.left = '16px';
-  element.style.zIndex = '1';
+  element.style.top = '20px';
+  element.style.left = '20px';
+  element.style.zIndex = '2';
   element.style.textAlign = 'left';
-  element.style.margin = '16px';
+  element.style.margin = '20px';
   }, 100);
   });
 }logochange().then(() => setTimeout(() =>{
@@ -41,4 +41,7 @@ async function logochange(event){
   document.removeEventListener("scroll", (event) => {});
   document.getElementsByClassName('navbar')[0].getElementsByClassName('logonav')[0].innerHTML = 'OtakuSpot';
   element.innerHTML='';
-}, 3000));});
+  element.style.height = '0px';
+  document.body.height = '100vh';
+}, 1000));});
+

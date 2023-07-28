@@ -3,7 +3,6 @@ body{
     background-color: #242424;
     flex-direction: column;
     display: flex;
-    
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -17,11 +16,19 @@ body{
     justify-content: center;
     transition: 1s;
     align-items: center;
-    height: 100vh;   
+    height: 100vh;
     font-family: "comicBlock";
     font-size: 20vw;
+    z-index: 2;
     color: #fff;
-    
+}
+.infoclub p{
+    font-size: 3vw;
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+    padding-bottom: 0%;
 }
 .logonav{
     display: flex;
@@ -39,8 +46,10 @@ body{
     font-family: "comicBlock";
 }
 .Content{
-    height: 100vh;
-    display: flex;
+    flex:1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: #fff;
 }
 .navbar{
     display: flex;
@@ -63,7 +72,7 @@ body{
     padding: 16px;
     height: 100vh;
     &:hover{
-        color: red;
+        color:#ff90fb;
     }
 }
 .sidebar{
@@ -97,6 +106,146 @@ svg{
         color: red;
     }
 }
+.polygon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button-52 {
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 23px 40px 23px;
+    outline: 0;
+    color:white;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    background-color:#435cda;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button-52:after {
+    content: "";
+    background-color: #ffe54c;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+  }
+  
+  .button-52:hover:after {
+    top: 0px;
+    left: 0px;
+  }
+  .theTeam{
+    background-color:#f86bf2;
+    &::after{
+        background-color: #435cda;
+    }
+  }
+  .Events{
+    background-color:#435cda;
+    &::after{
+        background-color: #f86bf2;
+    }
+  }
+  .infoclub{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2vw;
+  }
+  .whoarewe,.whatarewe{
+    margin: 20px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    flex:1;
+    color: #fff;
+    font-family:  Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  .whoarewe h1{
+    margin-top: 100px;
+    font-size: 64px;
+    margin-bottom: 0%;
+    letter-spacing: 1px;
+  }
+    .whoarewe p{
+        font-size: 24px;
+        letter-spacing: 1px;
+        width:700px;
+        text-align: center;
+    }
+    .whatarewe h1{
+        font-size: 64px;
+    margin-bottom: 0%;
+    letter-spacing: 1px;
+  }
+    .whatarewe p{
+        font-size: 24px;
+        letter-spacing: 1px;
+        width:700px;
+        text-align: center;
+    }
+.theLore{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    flex:1;
+    color: #fff;
+    font-family:  Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.theLore h1{
+    margin-top: 100px;
+    font-size: 64px;
+    margin-bottom: 0%;
+    letter-spacing: 1px;
+}
+.carousel{
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    flex:1;
+    color: #fff;
+    overflow: hidden;
+    font-family:  Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.scroll-container {
+    background-color: #121212;
+    overflow: auto;
+    -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none; 
+    white-space: nowrap;
+    padding: 10px;
+    &::-webkit-scrollbar {
+        display: none;
+      }
+  }
+.loreItem{
+    border:4px solid #fff;
+    border-radius: 10px;
+    height: 513px;
+    width: 590px;
+}
+  @media (min-width: 768px) {
+    .button-52 {
+      padding: 26px 100px 26px;
+    }
+  }
 @font-face {
     font-family: 'comicBlock';
     src: url(Fonts/comic-block/Comic\ Block\ \ DEMO\ by\ Marta\ van\ Eck.ttf);
@@ -114,5 +263,13 @@ svg{
     }
     svg{
         visibility: visible;
+    }
+    .Content{
+        grid-template-columns: 1fr;
+        grid-row-gap:50px ;
+    }
+    .polygon img {
+        width: 80%;
+        height: 100%;
     }
   }
