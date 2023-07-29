@@ -118,7 +118,7 @@ svg{
     font-size: 16px;
     font-weight: 200;
     letter-spacing: 1px;
-    padding: 23px 40px 23px;
+    padding: 23px 100px 23px;
     outline: 0;
     color:white;
     border: 1px solid black;
@@ -291,7 +291,6 @@ svg{
     font-family:  Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .chooseyourhero h1{
-    margin-top: 100px;
     font-size: 64px;
     margin-bottom: 0%;
     letter-spacing: 1px;
@@ -305,7 +304,7 @@ svg{
     font-family: 'comicBlock';
     src: url(Fonts/comic-block/Comic\ Block\ \ DEMO\ by\ Marta\ van\ Eck.ttf);
 }
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     *{
         font-size: 60px;
     }
@@ -326,5 +325,50 @@ svg{
     .polygon img {
         width: 80%;
         height: 100%;
+    }
+    .galleryppl{
+        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .whoarewe p{
+        margin: 20px;
+        width: 400px;
+        text-align: center;
+    }
+    .whoarewe h1{
+        font-size: 40px;
+    }
+    .whatarewe h1{
+        font-size: 40px;
+    }
+    .whatarewe p{
+        margin: 20px;
+        width: 400px;
+        text-align: center;
+    }
+    .theLore h1{
+        font-size: 40px;
+    }
+    .loreItem{
+        width: 400px;
+        height: 400px;
+    }
+    .loreItem h3{
+        font-size: 24px;
+    }
+    .loreItem p{
+        font-size: 20px;
+    }
+    .chooseyourhero h1{
+        font-size: 40px;
+    }
+    .chooseyourhero img{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
   }
