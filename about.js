@@ -37,8 +37,16 @@ createLore('The Second War', 'The Second War of the OtakuSpot', 'images/philip-o
 let heroes=document.getElementsByClassName('galleryppl')[0];
 let i=12;
 while(i>0){
-    let hero=document.createElement('img');
-    hero.src='images/image.png';
+    let hero=document.createElement('div');
+    hero.classList.add('img__wrap');
+    let img =document.createElement('img');
+    img.classList.add('img__img');
+    img.setAttribute('src', 'images/image.png');
+    let p = document.createElement('p');
+    p.classList.add('img__description');
+    p.innerHTML='Name';
+    hero.appendChild(img);
+    hero.appendChild(p);
     heroes.appendChild(hero);
     i--;
     }

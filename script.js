@@ -3,7 +3,8 @@
 let svg= document.querySelector('svg');
 svg.addEventListener('click', function(e){
     console.log(e.target);
-    let ele=document.getElementsByClassName('sidebar')[0];
+    let pp=document.getElementsByClassName('logo')[0];
+    let ele=document.getElementsByClassName('sidebar2')[0];
     ele.style.visibility='visible';
     const specifiedElement = document.getElementById('a')
 

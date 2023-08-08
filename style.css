@@ -1,6 +1,6 @@
 body{
-    background-image: url("images/background.png");
-    background-color: #242424;
+    /* background-image: url("images/background.png"); */
+    background-color: #111111;
     flex-direction: column;
     display: flex;
     -webkit-background-size: cover;
@@ -18,6 +18,7 @@ body{
     flex-direction: column;
     justify-content: center;
     transition: 1s;
+    position: absolute;
     align-items: center;
     height: 100vh;
     font-family: "comicBlock";
@@ -26,26 +27,24 @@ body{
     color: #fff;
 }
 .infoclub p{
-    font-size: 3vw;
+    font-size: 30px;
     color: #fff;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Gotham';
     text-align: center;
     padding: 50px;
     padding-bottom: 0%;
+    margin:0px;
 }
 .logonav{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     gap: 4vw;
-    position: fixed;
-    top: 0;
-    left: 0;
-    font-size: 5vw;
+    font-size: 64px;
+    padding-left: 20px;
     color: #fff;
     transition: 0.4s;
     align-items: right;
-    padding: 20px;
     font-family: "comicBlock";
 }
 .Content{
@@ -54,60 +53,73 @@ body{
     grid-template-columns: 1fr 1fr;
     color: #fff;
 }
+.heh{
+    position :fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background:rgba(0,0,0,.7);
+    backdrop-filter: blur(5px);
+    height:100px;
+}
 .navbar{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 4vw;
-    position: fixed;
-    top: 0;
-    right: 0;
     font-size: 4vw;
     color: #fff;
+    /* background:rgba(0,0,0,.7);
+    backdrop-filter: blur(5px); */
     transition: 0.4s;
     align-items: right;
     padding: 20px;
+    padding-bottom:50px;
+    z-index: 99;
     font-family: "comicBlock";
+}
+.navbar div{
+    z-index:99;
+    font-family: 'Futura';
+    font-size: 38px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap:4vw;
+    padding-right: 20px;
 }
 .navbar a{
     text-decoration: none;
     color: #fff;
-    padding: 16px;
-    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     &:hover{
         color:#ff90fb;
     }
-}
-.sidebar{
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    gap: 3vw;
-    position: fixed;
-    top: 0;
-    right: 0;
-    font-size: 40px;
-    text-align: right;
-    color: #fff;
-    transition: 0.4s;
-    align-items: right;
-    padding: 20px;
-    font-family: "comicBlock";
-    background-color: #242424;
-    flex: 1;
-    width: 100vw;
-    visibility: collapse;
 }
 svg{
     margin-left: auto;
     visibility: hidden;
 }
-.sidebar a{
+.sidebar2{
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    padding-right: 20px;
+    font-family: "comicBlock";
+    visibility: collapse;
+    position: fixed;
+
+}
+.sidebar2 a{
     text-decoration: none;
     color: #fff;
     &:hover{
-        color: red;
+        color:#ff90fb;
     }
+    
 }
 .polygon{
     display: flex;
@@ -115,10 +127,9 @@ svg{
     align-items: center;
 }
 .button-52 {
-    font-size: 16px;
-    font-weight: 200;
+    font-size: 32px;
     letter-spacing: 1px;
-    padding: 23px 100px 23px;
+    padding: 23px 75px 23px;
     outline: 0;
     color:white;
     border: 1px solid black;
@@ -130,6 +141,7 @@ svg{
     touch-action: manipulation;
     align-items: center;
     justify-content: center;
+    font-family: 'Futura';
   }
   
   .button-52:after {
@@ -167,9 +179,6 @@ svg{
         align-items: center;
         gap: 2vw;
   }
-  .infoclub p{
-    margin:0px;
-  }
   .whoarewe,.whatarewe{
     margin: 20px;
     
@@ -177,32 +186,35 @@ svg{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2vw;
     flex:1;
     color: #fff;
-    font-family:  Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family:  'Gotham';
+    font-size: 30px;
   }
   .whoarewe h1{
-    margin-top: 100px;
-    font-size: 64px;
-    margin-bottom: 0%;
+    font-weight:50;
+    font-size: 48px;
+    margin: 0%;
     letter-spacing: 1px;
+    font-family: 'Futura';
   }
     .whoarewe p{
         font-size: 24px;
         letter-spacing: 1px;
-        width:700px;
+        width:800px;
         text-align: center;
     }
     .whatarewe h1{
-        font-size: 64px;
-    margin-bottom: 0%;
+        font-weight:50;
+        font-size: 48px;
+        margin: 0%;
     letter-spacing: 1px;
+    font-family: 'Futura';
   }
     .whatarewe p{
         font-size: 24px;
         letter-spacing: 1px;
-        width:700px;
+        width:800px;
         text-align: center;
     }
 .theLore{
@@ -210,14 +222,15 @@ svg{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2vw;
+    /* gap: 2vw; */
     flex:1;
     color: #fff;
-    font-family:  Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Futura';
 }
 .theLore h1{
     margin-top: 100px;
-    font-size: 64px;
+    font-weight: 50;
+    font-size: 48px;
     margin-bottom: 0%;
     letter-spacing: 1px;
 }
@@ -247,7 +260,7 @@ svg{
     flex:0 0 auto;
     display: flex;
     flex-direction: column;
-    border:4px solid #fff;
+    border:2px solid #fff;
     margin: 20px;
     margin-right: 0px;
     border-radius: 10px;
@@ -258,13 +271,18 @@ svg{
 .loreItem h3{
     font-size: 32px;
     align-items: right;
+    font-weight: 50;
     margin: 20px;
     margin-bottom: 0px;
     letter-spacing: 1px;
     text-align: right;
 }
 .loreItem p{
-    font-size: 24px;
+    font-size: 20px;
+    font-family: 'Gotham';
+    display: flex;
+    flex:1;
+    word-wrap: break-word;
     margin: 20px;
     margin-top: 0px;
     letter-spacing: 1px;
@@ -288,10 +306,11 @@ svg{
     gap: 2vw;
     flex:1;
     color: #fff;
-    font-family:  Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family:  'futura';
 }
 .chooseyourhero h1{
-    font-size: 64px;
+    font-size: 48px;
+    font-weight: 50;
     margin-bottom: 0%;
     letter-spacing: 1px;
 }
@@ -300,9 +319,49 @@ svg{
     grid-template-columns: 1fr 1fr 1fr 1fr;
 
 }
+.galleryppl img{
+    width: 100%;
+    height: 100%;
+}
+.img__wrap {
+    position: relative;
+    height: auto;
+    width: auto;
+  }
+  
+  .img__description {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: 20px;
+    margin-bottom: 0px;
+
+    right: 0;
+    background: rgb(255, 255, 255);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+  
+    /* transition effect. not necessary */
+    transition: opacity .2s, visibility .2s;
+  }
+  
+  .img__wrap:hover .img__description {
+    visibility: visible;
+    opacity: 1;
+  }
 @font-face {
     font-family: 'comicBlock';
     src: url(Fonts/comic-block/Comic\ Block\ \ DEMO\ by\ Marta\ van\ Eck.ttf);
+}
+@font-face {
+    font-family: 'Gotham';
+    src: url(Fonts/GothamLight/GothamLight.otf);
+}
+@font-face {
+    font-family: 'Futura';
+    src: url(Fonts/Futura/Futura\ Medium/Futura\ Medium.otf);
 }
 @media (max-width: 800px) {
     *{
