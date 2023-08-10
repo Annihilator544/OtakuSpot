@@ -1,5 +1,5 @@
 body{
-    /* background-image: url("images/background.png"); */
+    background-image: url("images/background.png");
     background-color: #111111;
     flex-direction: column;
     display: flex;
@@ -132,7 +132,7 @@ svg{
     padding: 23px 75px 23px;
     outline: 0;
     color:white;
-    border: 1px solid black;
+    border: 0px solid black;
     cursor: pointer;
     position: relative;
     background-color:#435cda;
@@ -149,16 +149,18 @@ svg{
     background-color: #ffe54c;
     width: 100%;
     z-index: -1;
+    outline: none;
+    border: 0px solid transparent;
     position: absolute;
     height: 100%;
-    top: 7px;
-    left: 7px;
+    top: 0px;
+    left: 0px;
     transition: 0.2s;
   }
   
   .button-52:hover:after {
-    top: 0px;
-    left: 0px;
+    top: 7px;
+    left: 7px;
   }
   .theTeam{
     background-color:#f86bf2;
@@ -351,6 +353,21 @@ svg{
     visibility: visible;
     opacity: 1;
   }
+.join{
+    display: flex;
+    flex:1;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 80px   ;
+}
+.join svg{
+    visibility: visible;
+    display: flex;
+    margin: 0;
+    height: 48px;
+    width: 48px;
+}
 @font-face {
     font-family: 'comicBlock';
     src: url(Fonts/comic-block/Comic\ Block\ \ DEMO\ by\ Marta\ van\ Eck.ttf);
