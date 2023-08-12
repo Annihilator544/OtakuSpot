@@ -45,4 +45,5 @@ async function logochange(event){
   element.style.height = '0px';
   document.body.height = '100vh';
 }, 1000));});
-
+let width= 
+let hr=document.getElementsByClassName('hr')[0];

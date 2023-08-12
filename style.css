@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-image: url("images/background.png");
     background-color: #111111;
@@ -203,7 +206,7 @@ svg{
     .whoarewe p{
         font-size: 24px;
         letter-spacing: 1px;
-        width:800px;
+        width:1000px;
         text-align: center;
     }
     .whatarewe h1{
@@ -367,6 +370,52 @@ svg{
     margin: 0;
     height: 48px;
     width: 48px;
+}
+.beUpdated{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    font-size: 48px;
+    flex:1;
+    color: #fff;
+    font-family:  'futura';
+}
+.BlogItem{
+    display: flex;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    
+    flex:1;
+    color: #fff;
+    font-family:  'futura';
+}
+.BlogItem{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-family:  'futura';
+}
+.BlogItem h1{
+    font-size: 32px;
+    font-weight: 50;
+}
+.BlogItem p{
+    font-size: 20px;
+    font-family: 'Gotham';
+    display: flex;
+    flex:1;
+    width: 75%;
+    word-wrap: break-word;
+    margin-top: 0px;
+    letter-spacing: 1px;
+ }
+hr{
+    width: 80%;
+    border: 1px solid #fff;
+    margin: 20px;
+    margin-left: 10vw;
 }
 @font-face {
     font-family: 'comicBlock';
