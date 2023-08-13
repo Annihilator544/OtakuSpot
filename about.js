@@ -34,19 +34,19 @@ createLore('The Beginning', 'The Beginning of the OtakuSpot', 'images/philip-oro
 createLore('The First War', 'The First War of the OtakuSpot', 'images/philip-oroni-TGElBQvDINo-unsplash.jpg', 'https://www.otakuspot.cf/lore/the-first-war');
 createLore('The Second War', 'The Second War of the OtakuSpot', 'images/philip-oroni-TGElBQvDINo-unsplash.jpg', 'https://www.otakuspot.cf/lore/the-second-war');
 
-let heroes=document.getElementsByClassName('galleryppl')[0];
-let i=12;
-while(i>0){
-    let hero=document.createElement('div');
-    hero.classList.add('img__wrap');
-    let img =document.createElement('img');
-    img.classList.add('img__img');
-    img.setAttribute('src', 'images/image.png');
-    let p = document.createElement('p');
-    p.classList.add('img__description');
-    p.innerHTML='Name';
-    hero.appendChild(img);
-    hero.appendChild(p);
-    heroes.appendChild(hero);
-    i--;
-    }
+// let heroes=document.getElementsByClassName('galleryppl')[0];
+// let i=12;
+// while(i>0){
+//     let hero=document.createElement('div');
+//     hero.classList.add('img__wrap');
+//     let img =document.createElement('img');
+//     img.classList.add('img__img');
+//     img.setAttribute('src', 'images/image.png');
+//     let p = document.createElement('p');
+//     p.classList.add('img__description');
+//     p.innerHTML='Name';
+//     hero.appendChild(img);
+//     hero.appendChild(p);
+//     heroes.appendChild(hero);
+//     i--;
+//     }
