@@ -124,16 +124,131 @@ svg{
     visibility: hidden;
 }
 .sidebar2{
-    z-index: 999;
-    display: flex;
-    flex-direction: column;
-    text-align: right;
-    padding-right: 20px;
-    font-family: "comicBlock";
-    visibility: collapse;
-    position: fixed;
-
+    display: none;
+    visibility: hidden;
+    position: absolute;
 }
+.top-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #FFF;
+    padding: 20px;
+  }
+  
+  .menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu > li {
+    margin: 0 1rem;
+    overflow: hidden;
+  }
+  
+  .menu-button-container {
+    display: none;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #menu-toggle {
+    display: none;
+  }
+  
+  .menu-button,
+  .menu-button::before,
+  .menu-button::after {
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+  }
+  
+  .menu-button::before {
+    content: "";
+    margin-top: -8px;
+  }
+  
+  .menu-button::after {
+    content: "";
+    margin-top: 8px;
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button::before {
+    margin-top: 0px;
+    transform: rotate(405deg);
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button {
+    background: rgba(255, 255, 255, 0);
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button::after {
+    margin-top: 0px;
+    transform: rotate(-405deg);
+  }
+  
+  @media (max-width: 700px) {
+    .menu-button-container {
+      display: flex;
+    }
+  
+    .menu {
+      position: absolute;
+      top: 0;
+      margin-top: 100px;
+      left: 0;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+    .sidebar2{
+        position: relative;
+        visibility: visible;
+    }
+    #menu-toggle ~ .menu li {
+      height: 0;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+  
+    #menu-toggle:checked ~ .menu li {
+      border: 1px solid #333;
+      height: 2.5em;
+      padding: 0.5em;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+  
+    .menu > li {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0.5em 0;
+      width: 100%;
+      color: white;
+      background-color: #222;
+    }
+  
+    .menu > li:not(:last-child) {
+      border-bottom: 1px solid #444;
+    }
+  }
 .sidebar2 a{
     text-decoration: none;
     color: #fff;
@@ -418,6 +533,7 @@ svg{
 .join{
     display: flex;
     flex:1;
+    
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -492,8 +608,17 @@ hr{
     *{
         font-size: 60px;
     }
-    body{
-    }
+    html, body{
+        width:100%;
+        overflow-x:hidden;
+        }
+        .bgOtaku2{
+            height: 150vh;
+            width: 100vw;
+            z-index: 9997;
+            position: absolute;
+            background-color: #090909;
+        }
     .flip-card {
         height: 550px;
         width: 100vw;
@@ -502,10 +627,12 @@ hr{
       }
     .navbar {
       visibility: hidden;
+      display: none;
     }
-    .logonav{
+    .sidebar2{
         visibility: visible;
         font-size: 60px;
+        z-index: 99;
     }
     svg{
         visibility: visible;
@@ -556,5 +683,10 @@ hr{
     }
     .chooseyourhero h1{
         font-size: 40px;
+    }
+    .join{
+        justify-content: space-around;
+        width: 100vw;
+        gap:0px;
     }
   }
