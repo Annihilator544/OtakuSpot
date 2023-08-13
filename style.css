@@ -492,6 +492,14 @@ hr{
     *{
         font-size: 60px;
     }
+    body{
+    }
+    .flip-card {
+        height: 550px;
+        width: 100vw;
+        display: grid;
+        perspective: 1000px; /* Remove this if you don't want the 3D effect */
+      }
     .navbar {
       visibility: hidden;
     }
@@ -548,11 +556,5 @@ hr{
     }
     .chooseyourhero h1{
         font-size: 40px;
-    }
-    .chooseyourhero img{
-        width: 80%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
   }
